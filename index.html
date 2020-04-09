@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Landing Page</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top container-fluid">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">
+	        <img src="./assets/064-superman.svg" alt="logo" height="40px">
+	    </a> 
+	    <h1 class="title text-light">Super Legos</h1>
+
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	    <div class="collapse navbar-collapse" id="navbarResponsive">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item active">
+	          <a class="nav-link" href="#">Home
+	                <span class="sr-only">(current)</span>
+	              </a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#gallery">Gallery</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Pricing</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Contact</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</header>
+<!-- JUMBOTRON -->
+	<div class="jumbotron container-fluid text-center" id="jumbotron">
+		<h1 class="display-4">Welcome to Super Legos!</h1>
+		<p class="lead">Get to know your favourite superhero in Lego format!</p>
+		<br><br>
+		<p>Subscribe to our newsletter to be updated about new releases!</p>
+		<form class="form-inline justify-content-center">
+			<div>
+				<input type="password" class="form-control" id="email" placeholder="Enter your email">
+			</div>
+			<div>			
+			<button type="submit" class="btn btn-primary">Subscribe Newsletter</button>
+			</div>
+		</form>
+	</div>
+
+<!-- LEGO GALLERY -->
+<div class="container-fluid text-center bg-primary text-light" id="gallery">
+	<br>
+  	<h1 class="font-weight-light text-center text-lg-left mt-4 mb-0 row justify-content-center">Lego SuperHero Gallery</h1>
+  	<br><br>
+
+  <div class="row text-center">
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/064-superman.svg">
+            <br><br>
+            <figcaption class="figure-caption">SUPERMAN</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/063-batman.svg">
+            <br><br>
+            <figcaption class="figure-caption">BATMAN</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/065-wolverine.svg">
+            <br><br>
+            <figcaption class="figure-caption">WOLVERINE</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/066-Spiderman.svg">
+            <br><br>
+            <figcaption class="figure-caption">SPIDERMAN</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/069-thor.svg">
+            <br><br>
+            <figcaption class="figure-caption">THOR</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/070-deadpool.svg">
+            <br><br>
+            <figcaption class="figure-caption">DEADPOOL</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/041-businessman.svg">
+            <br><br>
+            <figcaption class="figure-caption">SHERLOCK HOLMES</figcaption>
+             <br><br>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-6">
+            <img class="img-fluid" src="./assets/046-santa claus.svg">
+            <br><br>
+            <figcaption class="figure-caption">SANTA CLAUS</figcaption>
+             <br><br>
+    </div>
+
+  </div>
+  <button class="btn btn-light">See more!</button>
+</div>
+<div>
+	
+<!-- PRICING SECTION-->
+
+<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+            <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">PURCHASE UNIT</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+            <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">PURCHASE PACK</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+            <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">PURCHASE BUNDLE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
