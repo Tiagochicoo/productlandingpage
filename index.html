@@ -7,14 +7,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="top">
 
 <!-- NAVBAR -->
-<header>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top container-fluid">
+<header id="header">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top container-fluid" id="nav-bar">
 	  <div class="container">
 	    <a class="navbar-brand" href="#">
-	        <img src="./assets/064-superman.svg" alt="logo" height="40px">
+	        <img src="./assets/064-superman.svg" alt="logo" height="40px" id="header-img">
 	    </a> 
 	    <h1 class="title text-light">Super Legos</h1>
 
@@ -24,7 +24,7 @@
 	    <div class="collapse navbar-collapse" id="navbarResponsive">
 	      <ul class="navbar-nav ml-auto">
 	        <li class="nav-item active">
-	          <a class="nav-link" href="#">Home
+	          <a class="nav-link" href="#top">Home
 	                <span class="sr-only">(current)</span>
 	              </a>
 	        </li>
@@ -32,31 +32,35 @@
 	          <a class="nav-link" href="#gallery">Gallery</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Pricing</a>
+	          <a class="nav-link" href="#pricing">Pricing</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Contact</a>
+	          <a class="nav-link" href="#contact">Contact</a>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
-</header>
+
 <!-- JUMBOTRON -->
 	<div class="jumbotron container-fluid text-center" id="jumbotron">
-		<h1 class="display-4">Welcome to Super Legos!</h1>
-		<p class="lead">Get to know your favourite superhero in Lego format!</p>
+		<h1 class="display-4" id="title">Welcome to Super Legos!</h1>
+		<p class="lead" id="description">Get to know your favourite superhero in Lego format!</p>
 		<br><br>
 		<p>Subscribe to our newsletter to be updated about new releases!</p>
-		<form class="form-inline justify-content-center">
-			<div>
-				<input type="password" class="form-control" id="email" placeholder="Enter your email">
-			</div>
-			<div>			
-			<button type="submit" class="btn btn-primary">Subscribe Newsletter</button>
-			</div>
+		<form class="form justify-content-center" id="survey-form" action="https://www.freecodecamp.com/email-submit">
+				<input class="col-3" type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+			<input type="submit" class="btn btn-primary" id="submit"><a href="https://www.freecodecamp.com/email-submit"></a></input>
 		</form>
-	</div>
+
+    <br>
+
+    <div class="overlay container" id="cover-video">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/befkvQXtiz0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  	</div>
+</header>
+
+  
 
 <!-- LEGO GALLERY -->
 <div class="container-fluid text-center bg-primary text-light" id="gallery">
@@ -129,8 +133,10 @@
 	
 <!-- PRICING SECTION-->
 
-<section class="pricing py-5">
+<section class="pricing py-5" id="pricing">
   <div class="container">
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0 row justify-content-center">Lego SuperHero Gallery</h1>
+    <br><br>
     <div class="row">
       <!-- Free Tier -->
       <div class="col-lg-4">
@@ -196,6 +202,41 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="contact bg-primary" id="contact">
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0 row justify-content-center text-light">Contact us</h1>
+  <br><br>
+  <div class="container contact-form">
+            <div class="contact-image">
+                <img src="./assets/064-superman.svg" alt="rocket_contact"/>
+            </div>
+            <form method="post" id="form" action="https://www.freecodecamp.com/email-submit">
+                <h3>Drop Us a Message</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name *" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        <div>
+                            <input  id="submit" type="submit" name="btnSubmit" class="btn btn-primary" value="Send Message" />
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
   </div>
 </section>
 

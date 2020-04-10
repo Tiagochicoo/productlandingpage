@@ -33,6 +33,10 @@ img:hover  {
   transition: 0.5s;
 }
 
+#cover-video {
+  margin-top: 50px
+}
+
 #gallery {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -104,6 +108,48 @@ section.pricing {
   .pricing .card:hover .btn {
     opacity: 1;
   }
+}
+
+/*CONTACT FORM*/
+
+section.contact {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.contact-form{
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    width: 70%;
+    -webkit-box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
 }
 
 
